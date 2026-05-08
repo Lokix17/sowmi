@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morning Sunshine 💙</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+
+    background:
+    linear-gradient(rgba(0,20,40,0.35), rgba(0,20,40,0.35)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80');
+
+    background-size:cover;
+    background-position:center;
+}
+
+/* bubbles */
+
+.bubble{
+    position:absolute;
+    bottom:-100px;
+    background:rgba(255,255,255,0.2);
+    border-radius:50%;
+    animation:float linear infinite;
+}
+
+.bubble:nth-child(1){
+    width:20px;
+    height:20px;
+    left:10%;
+    animation-duration:10s;
+}
+
+.bubble:nth-child(2){
+    width:12px;
+    height:12px;
+    left:30%;
+    animation-duration:8s;
+}
+
+.bubble:nth-child(3){
+    width:25px;
+    height:25px;
+    left:50%;
+    animation-duration:12s;
+}
+
+.bubble:nth-child(4){
+    width:15px;
+    height:15px;
+    left:70%;
+    animation-duration:9s;
+}
+
+.bubble:nth-child(5){
+    width:18px;
+    height:18px;
+    left:85%;
+    animation-duration:11s;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+        opacity:0;
+    }
+
+    20%{
+        opacity:0.7;
+    }
+
+    100%{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+}
+
+/* card */
+
+.card{
+    position:relative;
+    z-index:2;
+
+    width:90%;
+    max-width:420px;
+
+    padding:35px 28px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    box-shadow:0 10px 40px rgba(0,0,0,0.25);
+
+    text-align:center;
+
+    animation:fade 1.5s ease;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* sunflower image */
+
+.sunflower{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:50%;
+
+    margin-bottom:18px;
+
+    border:3px solid rgba(255,255,255,0.25);
+
+    box-shadow:0 0 25px rgba(255,255,255,0.2);
+}
+
+/* heading */
+
+h1{
+    color:white;
+    margin-bottom:18px;
+    font-size:2rem;
+}
+
+/* text */
+
+.message{
+    color:white;
+    line-height:1.9;
+    font-size:1rem;
+    font-weight:500;
+    text-shadow:0 2px 8px rgba(0,0,0,0.25);
+}
+
+.highlight{
+    color:#b9f6ff;
+    font-weight:700;
+}
+
+/* sparkles */
+
+.sparkle{
+    position:absolute;
+    color:white;
+    font-size:18px;
+    animation:twinkle 3s infinite;
+}
+
+.s1{
+    top:10%;
+    left:15%;
+}
+
+.s2{
+    top:18%;
+    right:15%;
+    animation-delay:1s;
+}
+
+.s3{
+    bottom:15%;
+    left:20%;
+    animation-delay:2s;
+}
+
+@keyframes twinkle{
+    0%,100%{
+        opacity:0.3;
+        transform:scale(1);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1.3);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bubble"></div>
+<div class="bubble"></div>
+<div class="bubble"></div>
+<div class="bubble"></div>
+<div class="bubble"></div>
+
+<div class="sparkle s1">✨</div>
+<div class="sparkle s2">✨</div>
+<div class="sparkle s3">✨</div>
+
+<div class="card">
+
+<img class="sunflower"
+src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=500&q=80">
+
+<h1>Good Morning 🌊🩵</h1>
+
+<div class="message">
+
+Heyyy scary lady 👻😭 <br><br>
+
+How are you managing work, workouts, exams and life all together so calmly huh?<br>
+
+<span class="highlight">Actually illegal.</span><br><br>
+
+I’m always proud of you kutty Sowmi💫<br>
+
+Now go have a beautiful day and don’t forget to drink more water heeee😁✨<br>
+
+Take care thangapulla🥰<br><br>
+
+Peekaboo 🫣<br>
+
+Your personal supporter is here as always🫂
+
+</div>
+
+</div>
+
+</body>
+</html>
